@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tapinja</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-fixed-top.scrolled {
+      background-color: WHITE !important;
+      transition: background-color 200ms linear;
+}
+  </style>
+</head>
+
+
+
+<body>
+
+  <script>
+    $(document).ready(function(){
+        if($(window).width() < 767){
+            $(".captchaLabel").text("Please check the box below to proceed");
+        }
+        else{
+            $(".captchaLabel").text("Please check the box on the right to proceed");
+        }
+});
+  </script>
+  <nav class="navbar-fixed-top" style="padding-top: 6px; padding-bottom: 6px; position: fixed; width: 100%; z-index: 90;">
+    <div class="container">
+      <div class="navbar navbar-expand-lg justify-content-between">
+        
+        <div><a href="index.html"><img src="assets/logos/logoApplify.svg" width="122" /></a></div>
+        <div class="d-lg-none"  id="menu-4-sidebar-toggle-opn"><div class="navbar-toggler" ><img src="assets/glyphs/burger.svg" /></div></div>
+        <div class="collapse navbar-collapse flex-grow-0 weight-500">
+          <div class="navbar-nav">
+            <div class="nav-item"><a class="nav-link text-dark pl-0" href="index.html#work">How Tapinja works</a></div>
+            <div class="nav-item"><a class="nav-link text-dark" href="terms.html">Terms</a></div>
+            <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div>
+            <div class="nav-item"><a class="btn btn-block btn-lg btn-primary" style="margin-left: 20px; font-weight: 500;" href="index.html#contactUs">Sign up</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-side" id="menu-4-sidebar">
+        <div class="navbar-side-content  justify-content-between text-right">
+          <div class="weight-700 d-flex flex-column justify-content-center" id="menu-4-sidebar-toggle-close"><div class="navbar-side-close mb-4"><img src="assets/glyphs/close.svg" width="32" /></div>
+            <div class="navbar-nav d-flex flex-column align-items-stretch text-center" style="font-family: SF Pro Rounded; font-weight: 500;">
+              <div class="nav-item"><a class="nav-link text-dark pl-0" href="#work">How Tapinja works</a></div>
+              <div class="nav-item"><a class="nav-link text-dark" href="terms.html">Terms</a></div>
+              <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div>
+              <div class="nav-item" style="margin-top: 20px;"><a class="nav-link btn btn-block btn-lg btn-primary navBtn" href="#contactUs">Sign up</a></div>
+            </div>
+          </div>
+          <div>
+            <p class="small mb-0"><span class="d-block d-xl-inline text-center mb-xl-0 mt-3">&copy; 2020 Black Ace Media. All right reserved.</span></p>
+          </div>
+        </div>
+        <div class="navbar-side-content weight-700"><a class="navbar-side-close mb-4" href="" data-id="menu-4-sidebar-close"><img src="assets/glyphs/close.svg" width="32" /></a></div>
+      </div>
+      <script>
+       $(document).ready(function () {
+          $('#menu-4-sidebar-toggle-opn').on('click', function() {
+            $('#menu-4-sidebar').toggleClass('show');
+          });
+          $('#menu-4-sidebar-toggle-close').on('click', function() {
+            $('#menu-4-sidebar').removeClass('show');
+          });
+        });
+        $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+           });
+        });  
+      </script>
+      
+    </div>
+  </nav>
+  <section class="cover-header">
+  <div class="bg-cover text-dark">
+    <div class="container">
+      <div class="row justify-content-between align-items-center py-5 header">
+        <div class="col-12 col-md-5 order-2 order-md-1 headerTitle">
+          <h1 class="display-4"><span style="color: #2F61E6;">Earn Money</span> by sharing with your followers</h1>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-2 mb-md-0"><a class="btn btn-block btn-lg btn-primary" href="#contactUs">Sign up</a></div>
+           
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0"><img class="w-custom" src="assets/pictures/headerImg.svg" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="work">
+  <div class="container">
+    <div>
+      <h1 style="text-align: center; font-weight: 500;">How Tapinja works</h1>
+    </div>
+    <div class="row justify-content-between align-items-center py-3">
+      
+      <div class="col-12 col-md-6 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="assets/pictures/pickAnApp.svg" /></div>
+      <div class="col-12 col-md-5 headerTitle">
+        <h1 style="font-weight: 500;">Pick an <span style="color: #2F61E6;">app</span></h1>
+        <p class="large mb-4" style="color: #696969;">Sign up and choose any app you'd like to promote to your followers on Instagram, Youtube, TikTok, Facebook, Snapchats and Blogs. 
+          <br>
+          <br>
+          We provide you with a link to share that you can copy and paste. You can create the content or utilize the content we have ready for you</p><a class="action-link" href="#contactUs"><span>Sign up now</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row justify-content-between align-items-center py-3 makeMoney">
+      <div class="col-12 col-md-5 headerTitle">
+        <h1 style="font-weight: 500;" class="headerTitle">Make <span style="color: #2F61E6;">money</span></h1>
+        <p class="large mb-4" style="color: #696969;">Every time your followers try new applications / game out you earn money. You can track all your earnings and stats from our dashboard.</p><a class="action-link" href="#contactUs"><span>Sign up now</span></a>
+      </div>
+      <div class="col-12 col-md-6 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="assets/pictures/MakeMoney.svg" /></div>
+
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row justify-content-between align-items-center py-3">
+      <div class="col-12 col-md-6 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="assets/pictures/getPaid.svg" /></div>
+      <div class="col-12 col-md-5 headerTitle">
+        <h1 style="font-weight: 500;">Get <span style="color: #2F61E6;">paid</span></h1>
+        <p class="large mb-4" style="color: #696969;">We allow you to redeem your money anytime you want as long as you hit the threshold. All payment will be done via Paypal but other options can be made available. </p><a class="action-link" href="#contactUs"><span>Sign up now</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-primary formSect" id="contactUs">
+  <div class="container">
+    <div class="row justify-content-center py-3">
+      <div class="col-12 col-md-9 col-lg-6">
+        <div>
+          <h2 style="text-align: center; font-weight: 500; color: white;">Contact us</h2>
+        </div>
+
+        <form style="display: flex; flex-direction: column; align-items: center;" method="POST" name="google-sheet">
+          <div class="form-group">
+          <label class="small" for="forms-8-name">Your name</label><input class="form-control form-control-lg" type="text" placeholder="Type your name here" id="forms-8-name" name="Name" data-error="Name is required."/><div class="help-block with-errors"></div></div>
+         
+          <div class="form-group subjectRadio">
+            <label class="small" for="forms-8-topic" id="radioLabel">What is your subject?</label>
+            <div class="radioOptions">
+            
+              <label for="Influencer" class="theOption">Influencer
+                <input class="subject" type="radio" id="Influencer" name="subject" value="Influencer">
+                <span class="checkmark"></span>
+             </label> 
+            <label for="Advertiser" class="theOption">Advertiser
+              <input class="subject" type="radio" id="Advertiser" name="subject" value="Advertiser">
+              <span class="checkmark"></span>
+            </label>
+   
+          </div>
+         
+        </div>
+          <div class="form-group"><label class="small" for="forms-8-email">Email address</label><input class="form-control form-control-lg" type="email" placeholder="Type your email address here" name="Email" id="forms-8-email" data-error="Valid email is required." /><div class="help-block with-errors"></div></div>
+          
+          <div class="form-group mb-7"><label class="small" for="forms-8-topic">Message</label><textarea id="forms-8-topic" name="Message" class="form-control form-control-lg" placeholder="Type your message here" rows="4" data-error="Please, leave us a message."></textarea>></textarea><div class="help-block with-errors"></div></div>
+          <div class="form-group captchaVal">
+            <label class="small captchaLabel" for="forms-8-topic" id="radioLabel">Please check the box on the right to proceed</label>
+            <div class="theCaptcha">
+            <div class="g-recaptcha" data-sitekey="6LeSQLQZAAAAAKQnOGUU3Is6nJiGbua949oSKtFq" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+            <input class="form-control d-none" data-recaptcha="true" data-error="Please complete the Captcha">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <input style="display:none;" type="text" id="date" name="time" value="">
+          <button class="btn btn-lg btn-light btn-block" name="submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row align-items-center py-4" style="justify-content: center;">
+      <div class="col-12 col-lg-8 navbar-expand text-lg-center weight-500 mb-4 mb-lg-0">
+        <div class="text-center py-3 py-lg-3">
+          <a class="transparent-invert-link mx-2" href=""><img src="assets/logos/footerLogo.svg" width="102" /></a>
+        </div>
+        <div class="navbar-nav d-block d-lg-flex justify-content-center" id="navFooter">
+          <div class="nav-item"><a class="nav-link text-light" href="#work">How Tapinja works</a></div>
+          <div class="nav-item"><a class="nav-link text-light" href="terms.html">Terms</a></div>
+          <div class="nav-item"><a class="nav-link text-light" href="privacy.html">Privacy policy</a></div>
+      </div>
+    </div>
+    <div class="border-top d-lg-none"></div>
+   
+    <div class="pt-lg-4 pb-4 pb-lg-3 text-center small">
+      <p class="text-muted mb-0">&copy; Copyright Tapinja. All Rights Reserved. This app is a property of Black Ace Media Inc.</p>
+    </div>
+ </div>
+</footer> 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby3SzKpgsFahTqSXlrAT-BgXYpfu7-NR5Uk5v4JYYh3AJC4Z1k/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>
+    <script type="text/javascript">
+      var d = new Date();
+      // Set the value of the "date" field
+      document.getElementById("date").value = d.toDateString();
+  </script>
+</body>
+
+</html>
